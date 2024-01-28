@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../CSS/Search.css">
+    <title>Search Page</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <div class="left-content">
+                <img src="../Images/Euro Cheese.png" alt="Logo">
+                <div class="title-content">
+                    <h1><c1>European Cheese</c1></h1>
+                    <nav>
+                        <ul>
+                            <li><a href="Main.html">Home</a></li>
+                            <li><a href="Products.html">Products</a></li>
+                            <li><a href="XmlView.html" >Xml View</a></li>
+                            <li><a href="Search.html">Search</a></li>
+                            <li><a href="Form.html">Form</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <h2>Search Product Codes</h2>
+    <form onsubmit="searchProduct(); return false;">
+        <label for="search">Enter Codes 000-001 to 000-011:</label>
+        <input type="search" id="search" name="search">
+        <input type="submit" value="Search">
+    </form>
+    <p id="result"></p>
+</main>
+    
+<footer>
+    <p>&copy; 2023 Cheese Products</p>
+</footer>
+    
+<script>
+function searchProduct() {
+    var userInput = document.getElementById("search").value;
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function() {
+        if (request.readyState === 4) {
+            if (request.status === 200) {
+                var xmlDoc = request.responseXML;
+                var product = xmlDoc.querySelector("Product[Code='" + userInput + "']");
+                if (product) {
+                    var result = "<b>Name:</b> " + product.querySelector("Name").textContent + "<br><b>Description:</b> " + product.querySelector("Description").textContent + "<br><b>Quantity:</b> " + product.querySelector("Quantity").textContent + "<br><b>Unit Price:</b> " + product.querySelector("UnitPrice").textContent;
+                    document.getElementById("result").innerHTML = result;
+                } else {
+                    showError();
+                }
+            } else {
+                showError();
+            }
+        }
+    };
+    request.open("GET", "../XmlSchemaXslt/Data.xml", true);
+    request.send();
+}
+
+function showError() {
+    document.getElementById("result").innerHTML = "Product not found. Please try again.";
+}
+
+</script>
+  
+</body>
+</html>

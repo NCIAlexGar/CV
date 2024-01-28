@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="stylesheet.xsl"?>
+
+<Products>
+
+<Product Code="000-001"> 
+  <Category>France</Category>
+  <Name>Brie de Meaux</Name>
+  <Description>Large Truckle Of French Cheese</Description>
+  <Quantity>40</Quantity>
+  <UnitPrice>34.00</UnitPrice>
+</Product>
+
+<Product Code="000-002">
+  <Category>France</Category>
+  <Name>Morbier</Name>
+  <Description>Medium Slice Of French Cheese</Description>
+  <Quantity>100</Quantity>
+  <UnitPrice>16.00</UnitPrice>
+</Product>
+
+<Product Code="000-003">
+  <Category>Italy</Category>
+  <Name>Parmigiano</Name>
+  <Description>Large Italian Cheese</Description>
+  <Quantity>100</Quantity>
+  <UnitPrice>25.00</UnitPrice>
+</Product>
+  
+<Product Code="000-004">
+  <Category>Italy</Category>
+  <Name>Mozzarella</Name>
+  <Description>A Packet Of Italian Cheese</Description>
+  <Quantity>100</Quantity>
+  <UnitPrice>6.00</UnitPrice>
+</Product>
+
+<Product Code="000-005">
+  <Category>Spain</Category>
+  <Name>Manchego</Name>
+  <Description>Spanish Cheese</Description>
+  <Quantity>100</Quantity>
+  <UnitPrice>10.99</UnitPrice>
+</Product>
+
+<Product Code="000-006">
+  <Category>Germany </Category>
+  <Name>Butterkase</Name>
+  <Description>Small German Cheese</Description>
+  <Quantity>100</Quantity>
+  <UnitPrice>12.99</UnitPrice>
+</Product>
+
+<Product Code="000-007">
+  <Category>Germany</Category>
+  <Name>Limburger</Name>
+  <Description>German Cheese</Description>
+  <Quantity>100</Quantity>
+  <UnitPrice>10.99</UnitPrice>
+</Product>
+
+<Product Code="000-008">
+  <Category>Greece</Category>
+  <Name>Feta</Name>
+  <Description>Greek Cheese</Description>
+  <Quantity>100</Quantity>
+  <UnitPrice>9.00</UnitPrice>
+</Product>
+
+<Product Code="000-009">
+  <Category>Ireland</Category>
+  <Name>Cheddar</Name>
+  <Description>Irish Cheese</Description>
+  <Quantity>200</Quantity>
+  <UnitPrice>10.99</UnitPrice>
+</Product>
+
+<Product Code="000-010">
+  <Category>Sweden</Category>
+  <Name>Svecia</Name>
+  <Description>Small Slice Of Swedish Cheese</Description>
+  <Quantity>80</Quantity>
+  <UnitPrice>13.99</UnitPrice>
+</Product>
+
+<Product Code="000-011">
+  <Category>Poland</Category>
+  <Name>Oscypek</Name>
+  <Description>Polish Cheese</Description>
+  <Quantity>90</Quantity>
+  <UnitPrice>13.99</UnitPrice>
+</Product>
+
+</Products>

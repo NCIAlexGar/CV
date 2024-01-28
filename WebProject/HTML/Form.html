@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <title>Irish Farming Products</title>
+</head>
+<body>
+<div class="title">
+<div class="left-content">
+<img src="../Images/Euro Cheese.png" alt="Logo">
+<div class="title-content">
+    <h1><c1>European Cheese</c1></h1>
+        <nav>
+        <ul>
+            <li><a href="Main.html">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="XmlView.html" >Xml View</a></li>
+            <li><a href="Search.html" >Search</a></li>
+            <li><a href="Form.html">Form </a></li>
+        </ul>
+        </nav>
+    </div>
+    </div>
+</div>
+
+<main>
+    <section id="one">
+     <!-- anchor tag back to the index -->
+     <h2> Buy Products, Form</h2>
+<form>
+    <p>
+<label> Enter Your Name:</label>
+  <input id="nameid" name=“name” type=“text” required />
+  </p>
+
+<!-- I decided to use radio buttons, option lists and text boxes for my form -->
+<p> Enter Your Gender:
+<input type="radio" name="Gender" required>Male
+<input type="radio" name="Gender" required>Female
+<input type="radio" name="Gender" required>Other
+</p>
+
+
+  <p> <label>Enter Date Of Birth:</label>
+  <select name="Days">
+   <option value="1"> 1</option>
+   <option value="2"> 2</option>
+   <option value="3"> 3</option>
+   <option value="4"> 4</option>
+   <option value="5"> 5</option>
+   <option value="6"> 6</option>
+   <option value="7"> 7</option>
+   <option value="8"> 8</option>
+   <option value="9"> 9</option>
+   <option value="10"> 10</option>
+   <option value="11"> 11</option>
+   <option value="12"> 12</option>
+   <option value="13"> 13</option>
+   <option value="14"> 14</option>
+   <option value="15"> 15</option>
+   <option value="16"> 16</option>
+   <option value="17"> 17</option>
+   <option value="18"> 18</option>
+   <option value="19"> 19</option>
+   <option value="20"> 20</option>
+   <option value="21"> 21</option>
+   <option value="22"> 22</option>
+   <option value="23"> 23</option>
+   <option value="24"> 24</option>
+   <option value="25"> 25</option>
+   <option value="26"> 26</option>
+   <option value="27"> 27</option>
+   <option value="28"> 28</option>
+   <option value="29"> 29</option>
+   <option value="30"> 30</option>
+   <option value="31"> 31</option>
+
+  </select>
+  <select name="Months">
+    <option value="January"> January</option>
+    <option value="Feburary"> Feburary</option>
+    <option value="March"> March</option>
+    <option value="April"> April</option>
+    <option value="May"> May</option>
+    <option value="June"> June</option>
+    <option value="July"> July</option>
+    <option value="August"> August</option>
+    <option value="September"> September</option>
+    <option value="October"> October</option>
+    <option value="November"> November</option>
+    <option value="December"> December</option>
+  </select>
+  <select name="Years">
+    <option value="Before 1980 and Further"> Before 1980</option>
+    <option value="1980"> 1980s</option>
+    <option value="1990"> 1990</option>
+    <option value="1991"> 1991</option>
+    <option value="1992"> 1992</option>
+    <option value="1993"> 1993</option>
+    <option value="1994"> 1994</option>
+    <option value="1995"> 1995</option>
+    <option value="1996"> 1996</option>
+    <option value="1997"> 1997</option>
+    <option value="1998"> 1998</option>
+    <option value="1999"> 1999</option>
+    <option value="2000"> 2000</option>
+    <option value="2001"> 2001</option>
+    <option value="2002"> 2002</option>
+    <option value="2003"> 2003</option>
+    <option value="2004"> 2004</option>
+    <option value="2005"> 2005</option>
+    <option value="2006"> 2006</option>
+    <option value="2007"> 2007</option>
+    <option value="2008"> 2008</option>
+    <option value="2009"> 2009</option>
+    <option value="2010"> 2010</option>
+    <option value="2011"> 2011</option>
+  </select>
+</p>
+
+<p> <label>Enter Your Email:</label>
+  <input id="emailid" name="Email" type="text" required>
+</p>
+
+<p> <label>Enter Your Phone Number:</label>
+  <input id="phoneid" name="Phone Number" type="text" required>
+</p>
+
+<p> <label> Enter Your Product </label>
+<select name = "Products">
+    <option value="Camebert"> Camebert</option>
+    <option value="Brie de Meaux"> Brie de Meaux</option>
+    <option value="Morbier"> Morbier</option>
+    <option value="Parmigiano"> Parmigiano</option>
+    <option value="Mozzarella"> Mozzarella</option>
+    <option value="Manchego "> Manchego </option>
+    <option value="butterkäse"> butterkäse</option>
+    <option value="Limburger"> Limburger</option>
+    <option value="Feta"> Feta</option>
+    <option value="Cheddar"> Cheddar</option>
+    <option value="Svecia"> Svecia</option>
+    <option value="Oscypek"> Oscypek</option>
+</select>
+</p>
+<br>
+
+<h2> Payments</h2>
+<p> <label> Debit or Credit Card </label>
+  <input type="radio" name="Debit" required> Debit
+  <input type="radio" name="Debit" required> Credit Card 
+</p>
+
+<p> 
+  <label> Enter your Card Details </label>
+  <input id="cardid" name = "Card Number" type = "text" required> 
+</p>
+
+<input type="button" onclick="MyFunction()" value="Submit Form">
+<input type="reset" name="" value="Reset Form">
+</form>
+    </section>
+</main>
+
+<script>
+  function MyFunction() {
+        let name = document.getElementById('nameid').value;
+        let phone = document.getElementById('phoneid').value;
+        let email = document.getElementById('emailid').value;
+
+        if (name.length > 2 && phone.length > 0 && email.length > 0) {
+            // Displaying a pop-up message saying rhank you
+            alert("Thank You");
+        } else {
+            alert("Please fill the whole form");
+        }
+    }
+</script>
+
+<footer>
+    <p>&copy; 2023 Products</p>
+</footer>
+
+</body>
+</html>
